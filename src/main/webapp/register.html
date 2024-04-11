@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techwave</title>
+    <link rel="stylesheet" href="Register.css">
+</head>
+<body>
+<script type="text/javascript">
+const slideShow = document.querySelector('.slide-show');
+const slides = slideShow.querySelectorAll('img');
+
+let currentSlide = 0;
+
+function showSlide(n) {
+  slides.forEach(slide => slide.style.display = 'none');
+  slides[n].style.display = 'block';
+}
+
+showSlide(currentSlide);
+
+setInterval(() => {
+  currentSlide++;
+  if (currentSlide >= slides.length) {
+    currentSlide = 0;
+  }
+  showSlide(currentSlide);
+}, 3000); // Change this value to adjust slide interval in milliseconds
+
+</script>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Techwave</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Profile Page</a></li>
+                </ul>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search">
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="banner">
+            <h2>Laptop Sliding Image</h2>
+            <div class="slide-show">
+                <img src="image/image1.jpg" alt="laptop 1">
+                <img src="image/image2.jpg" alt="laptop 2">
+                <img src="image/image3.jpg" alt="laptop 3">
+                <img src="image/image4.jpg" alt="laptop 4">
+            </div>
+        </section>
+
+        <section class="quick-shipping">
+            <div class="container">
+                <div class="shipping-box">
+                    <h3>Quick Shipping</h3>
+                </div>
+                <div class="shipping-box">
+                    <h3>Genuine Product</h3>
+                </div>
+                <div class="shipping-box">
+                    <h3>Quick Shipping</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-laptops">
+            <h2>Feature Laptop</h2>
+            <div class="container">
+                <div class="laptop-card">
+                    <img src="image/laptop1.jpg" alt="laptop 1">
+                    <h4>Laptop Name</h4>
+                    <p>Laptop Description</p>
+                </div>
+                <div class="laptop-card">
+                    <img src="laptop2.jpg" alt="laptop 2">
+                    <h4>Laptop Name</h4>
+                    <p>Laptop Description</p>
+                </div>
+                <div class="laptop-card">
+                    <img src="laptop3.jpg" alt="laptop 3">
+                    <h4>Laptop Name</h4>
+                    <p>Laptop Description</p>
+                </div>
+                <div class="laptop-card">
+                    <img src="laptop4.jpg" alt="laptop 4">
+                    <h4>Laptop Name</h4>
+                    <p>Laptop Description</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="best-deals"> 
+            <h2>Best Deals</h2>
+            <div class="container">
+                <div class="laptop-card">
+                    <img src="laptop5.jpg" alt="laptop 5">
+                    <h4>Laptop Name</h4>
+                    <p>Laptop Description</p>
+                </div>
+                <div class="laptop-card">
+                    <img src="laptop6.jpg" alt="laptop 6">
+                    <h4>Laptop Name</h4>
+                    <p>Laptop Description</p>
+                </div>
+                <div class="laptop-card">
+                    <img src="laptop7.jpg" alt="laptop 7">
+                    <h4>Laptop Name</h4>
+                    <p>Laptop Description</p>  
+                </div>
+                <div class="laptop-card">
+                    <img src="laptop8.jpg" alt="laptop 8">
+                    <h4>Laptop Name</h4>
+                    <p>Laptop Description</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script type="text/javascript">
+    
+    </script>
+
+    <footer>
+        <p>Footer</p>
+    </footer>
+</body>
+</html>
